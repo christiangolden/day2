@@ -27,6 +27,35 @@
                 <p>Attempts: <span id="attempts">0</span></p>
                 <p>Best Score: <span id="best-score">-</span></p>
             </div>
+            
+            <!-- Leaderboard Section -->
+            <div id="leaderboard-container">
+                <h3>Leaderboard</h3>
+                <table id="leaderboard">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Attempts</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- Leaderboard entries will be populated here -->
+                    </tbody>
+                </table>
+                <button id="show-leaderboard-btn">Show Leaderboard</button>
+            </div>
+            
+            <!-- Player Name Input Modal -->
+            <div id="name-modal" class="modal">
+                <div class="modal-content">
+                    <h3>Congratulations!</h3>
+                    <p>You made it to the leaderboard!</p>
+                    <input type="text" id="player-name" placeholder="Enter your name" maxlength="20">
+                    <button id="save-score-btn">Save Score</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="confetti.js"></script>
