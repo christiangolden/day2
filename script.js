@@ -93,6 +93,11 @@ function checkGuess() {
             localStorage.setItem('bestScore', bestScore);
             bestScoreDisplay.textContent = bestScore;
         }
+        
+        // Trigger confetti celebration
+        if (window.confetti) {
+            window.confetti.start();
+        }
     } else if (userGuess < secretNumber) {
         message.textContent = `Too low! Try a higher number.`;
         message.className = 'incorrect';
